@@ -1,0 +1,337 @@
+:root {
+    --color-primary: #f3f3f3;
+    --color-secondary: #222222;
+    --color-tertiary: #2f2fff;
+    --color-primary-darker: #bebebe;
+    --color-secondary-darker: #1d1d1d;
+    --color-tertiary-darker: #2f2fb2;
+    --color-primary-opacity: #f3f3f310;
+    --color-secondary-opacity: #2222224b;
+    --color-tertiary-opacity: #2f2fff4b;
+    --gradient-primary: linear-gradient(to top left, #f3f3f3, #808080);
+    --gradient-secondary: linear-gradient(to top left, #222222, #1d1d1d);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: var(--color-primary);
+    line-height: 1.9;
+    background-color: var(--color-secondary);
+    width: 100vw;
+    font-size: 400%;
+}
+
+
+/* Navigation */
+
+.nav {
+    font-weight: 300;
+    height: 20vh;
+    width: 100%;
+    background-color: var(--color-primary-opacity);
+    overflow: hidden;
+    z-index: 10000;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.nav__links {
+    float: right;
+    font-size: 80%;
+    padding: 3.3% 100px 0px 0px;
+}
+
+.nav__link {
+    text-decoration: none;
+    padding: 0px 5vh;
+    color: var(--color-primary);
+}
+
+.nav__logo-white {
+    height: 12vh;
+    margin-top: 4vh;
+    margin-left: 4vh;
+}
+
+.nav__link:hover {
+    transition: 0.5s;
+    color: var(--color-primary-darker);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.nav__link:last-child {
+    border: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    background-color: var(--color-secondary-darker);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+
+/* Header */
+
+.header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__h1 {
+    position: absolute;
+    width: 50%;
+    top: 33.3%;
+    margin: 0 25%;
+    font-size: 120%;
+}
+
+
+/* Header buttons */
+
+.btn {
+    font-weight: 500;
+    padding: 15px 50px;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-right: 50px;
+    float: left;
+    text-decoration: none;
+    font-size: 50%;
+}
+
+.btn-ghost {
+    color: var(--color-primary);
+    background-color: var(--color-secondary-opacity);
+    transition: ease-in 0.2s;
+    -webkit-transition: ease-in 0.2s;
+    -moz-transition: ease-in 0.2s;
+    -ms-transition: ease-in 0.2s;
+    -o-transition: ease-in 0.2s;
+}
+
+.btn-full {
+    color: var(--color-secondary-darker);
+    background-color: var(--color-primary-darker);
+    transition: ease-in 0.2s;
+    -webkit-transition: ease-in 0.2s;
+    -moz-transition: ease-in 0.2s;
+    -ms-transition: ease-in 0.2s;
+    -o-transition: ease-in 0.2s;
+}
+
+.btn-full:active,
+.btn-full:hover {
+    transition: 0.2s ease-in;
+    opacity: 0.2;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover {
+    transition: 0.2s ease-in;
+    opacity: 0.2;
+    /* color: var(--color-primary-darker);
+    background-color: var(--color-secondary-darker); */
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+
+/* Section 1 "Moje Tatuaże" */
+
+.section--1 {
+    min-height: 80vh;
+    padding: 10vh 0;
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.section--1-h1 {
+    padding: 2vh;
+    text-align: center;
+    font-size: 200%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.img-box {
+    margin: auto;
+    width: 80%;
+    height: 150vh;
+}
+
+.tattoos {
+    float: left;
+    width: 33%;
+    height: 33%;
+    z-index: 1;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    transform: scale(1);
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.tattoos:hover {
+    z-index: 10;
+    transition: 0.5s ease;
+    transform: scale(1.2);
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+/* Section 2 "O mnie" */
+
+.section--2 {
+    min-height: 80vh;
+    padding: 10vh 0;
+    width: 100%;
+    color: var(--color-secondary);
+    background-color: var(--color-primary-darker);
+    text-align: center;
+}
+
+.section--2-h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 300%;
+    padding: 2vh;
+}
+
+.section--2-text {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Section 3 "Cennik" */
+
+.section--3 {
+    min-height: 80vh;
+    width: 100%;
+    padding: 10vh 0;
+    color: var(--color-primary-darker);
+    background-color: var(--color-secondary);
+    text-align: center;
+}
+
+.section--3-h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 300%;
+    padding: 2vh;
+}
+
+.section--3-text-list {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    list-style: none;
+}
+
+.section--3-text-list-item {
+    padding: 1vh 0;
+    font-size: 80%;
+}
+
+.section--3-text-list-item>p {
+    font-size: 80%;
+    margin: auto;
+    width: 50%;
+}
+
+
+/* Section 4 "Kontakt" */
+
+.section--4 {
+    min-height: 70vh;
+    padding: 10vh 0;
+    color: var(--color-secondary);
+    background-color: var(--color-primary-darker);
+}
+
+.section--4-h1 {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.section--4-text {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.section--4-logo {
+    width: 4vh;
+}
+
+.section--4-link,
+.section--4-link:enabled,
+.section--4-link:visited,
+.section--4-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Footer  */
+
+.footer {
+    min-height: 10vh;
+    font-size: 25%;
+    text-align: center;
+    width: 100%;
+    padding: 2vh 0;
+    color: var(--color-primary-darker);
+    background-color: var(--color-secondary);
+}

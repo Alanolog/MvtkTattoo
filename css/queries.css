@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1366px) {
+    body {
+        font-size: 300%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav__links {
+        font-size: 80%;
+        padding: 6vh 50px 0px 0px;
+    }
+    .nav__link {
+        padding: 0px 2vh;
+    }
+    .btn {
+        padding: 5px 20px;
+    }
+    .section--3-text-list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-size: 200%;
+    }
+    .nav {
+        height: 10vh;
+    }
+    .nav__logo-white {
+        height: 6vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    .nav__links {
+        font-weight: 700;
+        padding: 3vh 0px 0px 0px;
+    }
+    .nav__link {
+        padding: 0px 20px;
+    }
+    .section--4-logo {
+        width: 5vh;
+    }
+    .section--4-text {
+        font-size: 200%;
+    }
+    .footer {
+        font-size: 100%;
+    }
+    .img-box {
+        height: 300vh;
+    }
+    .tattoos {
+        width: 50%;
+        height: 20%;
+    }
+    .section--3-text-list-item>p {
+        font-size: 100%;
+        width: 90%;
+    }
+    .header__h1 {
+        margin: 0 10%;
+        width: 80%;
+        top: 30%;
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 175%;
+    }
+    .nav__link {
+        padding: 0px 10px;
+    }
+    .section--1 {
+        height: 150vw;
+    }
+    .img-box {
+        width: 100%;
+    }
+    .tattoos {
+        width: 32vw;
+        height: 32vw;
+    }
+    .btn {
+        font-size: 120%;
+        padding: 5px 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 150%;
+    }
+    .nav__links {
+        float: right;
+        font-weight: 900;
+        font-size: 80%;
+        padding: 4vh 5px 0px 0px;
+    }
+}
